@@ -34,7 +34,8 @@ Para pedidos personalizados, usa el formulario o contacta por WhatsApp.
 
 ## ✨ Créditos
 
-Diseño y desarrollo por [Gabriel].  
+Diseño y desarrollo por [Kail].  
 Inspirado en el arte de Isa – Arteemis.
+
 
 
