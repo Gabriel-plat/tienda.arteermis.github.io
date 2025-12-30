@@ -1,6 +1,6 @@
 # Artemis – Tienda de Arte
 
-Sitio web para Isabel, artista visual especializada en obras pintadas y modeladas a mano.  
+Sitio web para Isa, artista visual especializada en obras pintadas y modeladas a mano.  
 Este proyecto representa su estilo místico y artesanal, con animaciones, galería sin precios y formulario de pedidos personalizados.
 
 ## 🌟 Características
@@ -34,8 +34,6 @@ Para pedidos personalizados, usa el formulario o contacta por WhatsApp.
 
 ## ✨ Créditos
 
-Diseño y desarrollo por [Kail].  
+Diseño y desarrollo por [Gabriel].  
 Inspirado en el arte de Isa – Arteemis.
-
-
 
