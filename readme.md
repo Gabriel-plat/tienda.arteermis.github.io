@@ -21,7 +21,7 @@ Este proyecto representa su estilo místico y artesanal, con animaciones, galer�
 ## 🚀 Cómo usar
 
 1. Clona el repositorio:
-https://github.com/Gabriel-plat/tienda.arteermis.github.io.git
+https://github.com/Gabriel-plat/tienda.arteermis.github.io
 
 2. Abre `index.html` en tu navegador
 
@@ -36,5 +36,4 @@ Para pedidos personalizados, usa el formulario o contacta por WhatsApp.
 
 Diseño y desarrollo por [Gabriel].  
 Inspirado en el arte de Isa – Arteemis.
-
 
