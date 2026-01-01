@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Arteemis – Tienda de Arte | Todo hecho o pintado a mano</title>
+  <meta name="description" content="Isabel, artista visual. Cerámica, fundas, cuadros, pines y más. Obras personalizadas hechas y pintadas a mano." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografías: serif decorativa y manuscrita -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS para animaciones on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container nav-container">
+      <a href="#home" class="brand" aria-label="Ir al inicio">Arteemis</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="nav-icon"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#sobre">Sobre la artista </a></li>
+        <li><a href="#toggleNote">Contacto / Pedidos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+   <div id="particles-js"></div>
+
+  <header id="home" class="hero" role="banner">
+    <!-- Fondo parallax sutil -->
+     
+    <div class="parallax parallax-stars" aria-hidden="true"></div>
+    <div class="parallax parallax-brush" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <img src="assets/logoarteemis.png" alt="Logo Artemis: cuervo con pincel" class="logo" />
+      <h1 class="headline">
+        <span class="draw-text">Todo hecho o pintado a mano</span>
+      </h1>
+      <p class="subhead">Arte místico y artesanal: cuervos, estrellas y lunas que cuentan historias.</p>
+      <a href="#galeria" class="btn btn-primary" aria-label="Explorar la galería">Explorar arte</a>
+    </div>
+  </header>
+
+  <!-- Galería -->
+  <section id="galeria" class="section container">
+    <h2 class="section-title" data-aos="fade-up">Galería de obras por estilo</h2>
+
+    <!-- Filtros (opcional visual) -->
+    <div class="filters" data-aos="fade-up">
+      <button class="chip active" data-filter="all" aria-label="Mostrar todas">Todas</button>
+      <button class="chip" data-filter="ceramica" aria-label="Mostrar cerámica">Cerámica</button>
+      <button class="chip" data-filter="fundas" aria-label="Mostrar fundas">Fundas</button>
+      <button class="chip" data-filter="cuadros" aria-label="Mostrar cuadros">Cuadros</button>
+      <button class="chip" data-filter="pines" aria-label="Mostrar pines">Pines</button>
+      <button class="chip" data-filter="playeras" aria-label="Mostrar playeras">Playeras</button>
+      <button class="chip" data-filter="arcilla" aria-label="Mostrar arcilla">Arcilla</button>
+    </div>
+
+    <div id="galeriaGrid" class="grid" data-aos="fade-up"></div>
+  </section>
+
+  <!-- Sobre Isabel -->
+  <section id="sobre" class="section container">
+    <h2 class="section-title" data-aos="fade-up">Sobre artista</h2>
+    <div class="about">
+      <div class="about-text" data-aos="fade-right">
+        <p>
+          Soy artista visual y fundadora de Arteemis. Mi trabajo explora lo místico y lo natural:
+          cuervos que inspiran y pinceladas que narran historias. Cada pieza es única,
+          creada a mano con técnicas de pintura y modelado artesanal.
+        </p>
+        <p>
+          No trabajo con catálogo estándar ni precios visibles: cada obra nace de una conversación y
+          se adapta a tu intención. Si algo aquí te resuena, cuéntame tu idea y lo hacemos realidad.
+        </p>
+      </div>
+      <div class="about-media" data-aos="fade-left">
+        <div class="process-grid">
+          <figure class="process-card">
+            <img src="assets/galeria/figuradeceramica.png" alt="Bocetos y símbolos: cuervos y lunas" />
+            <figcaption>Bocetos e iconografía</figcaption>
+          </figure>
+          <figure class="process-card">
+            <img src="assets/galeria/tazapinguino.png" alt="Modelado en arcilla y detalles artesanales" />
+            <figcaption>Modelado y textura</figcaption>
+          </figure>
+          <figure class="process-card">
+            <img src="assets/galeria/cuadro.png" alt="Pintura a mano con pinceladas y dorados" />
+            <figcaption>Pintura a mano</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+    <button class="btn btn-secondary" id="toggleNote">Ver solicitudes</button>
+  <!-- Contacto / Pedidos -->      
+  <section id="contacto" class="section container">
+    
+    <h2 class="section-title" data-aos="fade-up">Contacto y pedidos personalizados</h2>
+    <div class="contact-wrapper">
+      <form id="contactForm" class="contact-form" aria-label="Formulario de pedidos">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo de producto</label>
+            <select id="tipo" required>
+              <option value="">Selecciona</option>
+              <option value="ceramica">Cerámica (tazas, macetas, alcancías)</option>
+              <option value="arcilla">arcilla (tazas, macetas, alcancías)</option>
+              <option value="fundas">Fundas (celular, tablet, etc.)</option>
+              <option value="cuadros">Cuadros / Lienzos</option>
+              <option value="pines">Pines / Joyeros / Figuras</option>
+              <option value="playeras">Playeras</option>
+              <option value="otro">Otro estilo</option>
+            </select>
+            
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Idea o referencia</label>
+          <textarea id="mensaje" rows="4" placeholder="Cuéntame símbolos, colores, tamaño aproximado…" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="archivo">Adjuntar referencia (opcional)</label>
+          <input id="archivo" type="file" accept="image/*" />
+          <small class="muted">Usa esta opción para compartir inspiración visual.</small>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Enviar pedido</button>
+          <a class="btn btn-secondary" href="https://wa.me/56912345678?text=Hola%20Artemis%2C%20quiero%20pedir%20una%20obra%20personalizada" target="_blank" rel="noopener" aria-label="Abrir chat de WhatsApp">WhatsApp</a>
+        </div>
+        
+        <p id="contactMsg" class="muted" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-note" data-aos="fade-left">
+        <h3>Proceso</h3>
+        <ul>
+          <li><strong>Exploración:</strong> definimos símbolos, paleta y tamaño.</li>
+          <li><strong>Boceto:</strong> te envío propuesta visual.</li>
+          <li><strong>Creación:</strong> pintura/modelado artesanal.</li>
+          <li><strong>Entrega:</strong> coordinamos retiro o envío.</li>
+        </ul>      
+  </section>
+</aside>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Arteemis – Tienda de Arte. Obra única, mística y hecha a mano.</p>
+    </div>
+  </footer>
+
+  <!-- Librerías -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- EmailJS (opcional; pega tu clave pública y service/template IDs si lo usas) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
